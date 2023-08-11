@@ -8,16 +8,16 @@ public class produto {
 	private String nome;
 	private String estilo;
 	private String empresa;
-	private String console;
 	private int preco;
+	private int avaliacao;
 	
 	// Constructor
-	public produto(String nome, String estilo, String empresa, String console, int preco) {
+	public produto(String nome, String estilo, String empresa, int preco, int avaliacao) {
 		super();
 		this.nome = nome;
 		this.estilo = estilo;
 		this.empresa = empresa;
-		this.console = console;
+		this.avaliacao = avaliacao;
 		this.preco = preco;
 	}
 	
@@ -46,12 +46,12 @@ public class produto {
 		this.empresa = empresa;
 	}
 
-	public String getConsole() {
-		return console;
+	public int getAvaliacao() {
+		return avaliacao;
 	}
 
-	public void setConsole(String console) {
-		this.console = console;
+	public void setConsole(int avaliacao) {
+		this.avaliacao = avaliacao;
 	}
 
 	public int getPreco() {
@@ -73,8 +73,8 @@ public class produto {
 		System.out.println("\nNome: " + nome);
 		System.out.println("Estilo: " + estilo);
 		System.out.println("Empresa: " + empresa);
-		System.out.println("Console: " + console);
 		System.out.println("Preço: " + this.ajustapreco());
+		System.out.println("Avaliação (1 - 5): " + avaliacao);
 		
 	}
 	

@@ -67,7 +67,7 @@ public class curso {
 		System.out.println("Instituição: " + escola);
 		System.out.println("Duração: " + duracao + " meses");
 		System.out.println("Periodo: " + periodo);
-		System.out.println(this.ajustapreco());
+		System.out.println("Preço: " + this.ajustapreco());
 		
 	}
 	
